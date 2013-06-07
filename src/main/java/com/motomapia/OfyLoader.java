@@ -5,20 +5,22 @@ package com.motomapia;
 
 import static com.motomapia.OfyService.ofy;
 
-import com.googlecode.objectify.impl.LoaderImpl;
+import com.googlecode.objectify.impl.cmd.LoaderImpl;
 import com.motomapia.entity.EmailLookup;
 import com.motomapia.entity.Person;
+
+import java.util.Collections;
 
 /**
  * Extend the Loader command with our own logic
  *
  * @author Jeff Schnitzer
  */
-public class OfyLoader extends LoaderImpl<OfyLoader>
+public class OfyLoader extends LoaderImpl
 {
 	/** */
 	public OfyLoader(Ofy base) {
-		super(base);
+	    super(base);   
 	}
 
 	/**

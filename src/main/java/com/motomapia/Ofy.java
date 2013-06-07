@@ -3,14 +3,14 @@
 
 package com.motomapia;
 
-import com.googlecode.objectify.impl.ObjectifyImpl;
+import com.googlecode.objectify.impl.cmd.ObjectifyImpl;
 
 /**
  * Our basic data access interface.  Extends the basic Objectify interface to add our custom logic.
  *
  * @author Jeff Schnitzer
  */
-public class Ofy extends ObjectifyImpl<Ofy>
+public class Ofy extends ObjectifyImpl
 {
 	/** */
 	public Ofy(OfyFactory base) {

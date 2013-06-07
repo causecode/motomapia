@@ -4,3 +4,4 @@ test-output/
 .sass-cache/
 .settings/
 src/main/webapp/js/app
+.project
